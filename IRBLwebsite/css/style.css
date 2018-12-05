@@ -16,13 +16,6 @@
     padding: 20px 0px 20px 0px;
 }
 
-.jumbotron{
-    padding: 70px 30px 70px 30px;
-    margin: 0px auto;
-    background: rgb(164, 96, 228);
-    color: floralwhite;
-}
-
 address{
     font-size: 80%;
     margin: 0px;
@@ -32,7 +25,9 @@ address{
 body{
     padding:50px 0px 0px 0px;
     z-index:0;
-    background-color: #ccbaba;
+    background-color: #eaeaea;
+    width: 100%;
+    font-family: monospace;
 }
 
 .navbar {
@@ -45,13 +40,65 @@ body{
 	min-height: 200px;
 }
 
+ 
+
 @media (max-width: 600px) {
-	.carousel-caption{
-		display: none;
-	}
+    #carouselHome{
+        display: none;
+    }
+    #publi{
+        display: none;
+    }
+    #publiMobil{
+        display: inline-block;
+    }
+}
+
+#publiMovil{
+    display: none;
 }
 
 .nav-item{
-    padding-right: 40px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+
+#principalContainer{
+    background-color: aliceblue;
+}
+
+a{
+    color: rgb(32, 26, 37);
+}
+
+#carouselHome{
+    background-color: rgb(82, 50, 122); 
+
+}
+
+table{
+    width: 100%;
+}
+
+th{
+    background-color:  rgb(204, 185, 200);
+}
+  
+  .overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
