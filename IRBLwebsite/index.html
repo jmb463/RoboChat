@@ -20,20 +20,30 @@
     <body>
         <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
             <div class="container">
-                <a class="navbar-brand mr-auto" href="index.html"><img src="img/IRBL.png" height="30" width="21" id="Logo"></a>
+                <a class="navbar-brand mr-auto" href="index.html"><img src="img/IRBLicon.png" height="30" width="30" id="Logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active"><a class="nav-link" href="index.html"> Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="teams.html"><span class="fa fa-list fa-xs"></span> Teams</a></li>
-                        <li class="nav-item"><a class="nav-link" href="news.html"><span class="fa fa-list fa-xs"></span> News</a></li>
-                        <li class="nav-item"><a class="nav-link" href="rankings.html"><span class="fa fa-list fa-xs"> Rankings</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="register.html"><span class="fa fa-list fa-xs"> Register</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="aboutus.html"><span class="fa fa-info fa-xs"></span> About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contactus.html"><span class="fa fa-address-card fa-xs"> Contact</span></a></li>
+                        <li class="nav-item active"><a class="nav-link" href="index.html"> HOME</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"> TEAMS</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#team1"><img src="img/Spurs.png" height="30" width="30"> San Antonio Spurs</a>
+                                <a class="dropdown-item" href="#team2"><img src="img/SJBicon.png" height="30" width="30"> San José Bears</a>
+                                <a class="dropdown-item" href="#team2"><img src="img/PalmaSkyhawks.png" height="30" width="30"> Palma Skyhawks</a>
+                                <a class="dropdown-item" href="#team2"><img src="img/SKKnights.png" height="30" width="30"> Seoul SK Knights</a>
+                                <a class="dropdown-item" href="#team2"><img src="img/ShanghaiSharks.png" height="30" width="30"> Shanghai Sharks</a>
+                                <a class="dropdown-item" href="#team2"><img src="img/GifuSwoops.png" height="30" width="30"> Gifu Swoops</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="news.html"><span class="fa fa-list fa-xs"></span> NEWS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rankings.html"><span class="fa fa-list fa-xs"></span> RANKINGS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="register.html"><span class="fa fa-list fa-xs"></span> REGISTER</a></li>
+                        <li class="nav-item"><a class="nav-link" href="aboutus.html"><span class="fa fa-info fa-xs"></span> ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contactus.html"><span class="fa fa-address-card fa-xs"></span> CONTACT</a></li>
                     </ul>
                 </div>            
             </div>
@@ -50,26 +60,17 @@
                 </ul>
             
                 <!-- The slideshow -->
-                <div class="carousel-inner">
+                <div class="carousel-inner" id="ContenedorIMG">
                     <div class="carousel-item active">
-                        <img src="img/draftArticle.png" alt="Draft Article" width="1100" height="600">
-                        <div class="carousel-caption">
-                            <h2 id="noticiaPortada1"><a href="teams.html">LEAGUE COMMISIONER LAUNCHES THE 1ST ANNUAL IRBL DRAFT</a></h2>
-                        </div>
+                        <a href="news.html"><img class="image" src="img/draftArticle.png" alt="Draft Article" width="1100" height="600"><div class="overlay">Commisioner sets the date for the IRBL draft</div></a>
                     </div>
 
                     <div class="carousel-item">
-                        <img src="img/newCoach.png" alt="New Coach" width="1100" height="600">
-                        <div class="carousel-caption">
-                            <h2 id="noticiaPortada2"><a href="teams.html">NEW SPURS COACH</a></h2>
-                        </div>
+                        <a href="news.html"><img src="img/newCoach.png" alt="New Coach" width="1100" height="600"><div class="overlay">Ex-NBA allstar comes to IRBL to coach the San Antonio Spurs</div></a>
                     </div>
                     
                     <div class="carousel-item">
-                        <img src="img/SJBarena.png" alt="New Arena" width="1100" height="600">
-                        <div class="carousel-caption">
-                            <h2 id="noticiaPortada3"><a href="teams.html">FIRST ARENA CONFIRMED</a></h2>
-                        </div>
+                        <a href="news.html"><img src="img/SJBarena.png" alt="New Arena" width="1100" height="600"><div class="overlay">San Jose Bears are the first ones to have a stadium</div></a>
                     </div>
                 </div>
             
@@ -90,13 +91,73 @@
                 </div>
 
                 <div class="col-12 col-sm-6 col-lg-8">
-                    <p> Parte uno</p><hr>
+                    <div class="col-12 col-sm-12 col-lg-12">
+                        <h2 id="pwrRanksTitle">Standings</h2>
+                        <table class="table table-hover">
+                            <tr>
+                              <th>Occidental conference team</th>
+                              <th>Wins</th> 
+                              <th>Loses</th>
+                            </tr>
+                            <tr>
+                              <td>San Antonio Spurs</td>
+                              <td>0</td> 
+                              <td>0</td>
+                            </tr>
+                            <tr>
+                              <td>San José Bears</td>
+                              <td>0</td> 
+                              <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Palma Skyhawks</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <th>Oriental conference team</th>
+                                <th>Wins</th>
+                                <th>Loses</th>
+                            </tr>
+                            <tr>
+                                <td>Seoul SK Knights</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Shanghai Sharks</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Gifu Swoops</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                        </table>
+
+                        <a href="rankings.html">See advanced stats</a>
+                        <hr>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-lg-12">
+                        <a href="register.html"><h3>Remember to declare for the IRBL draft here:</h3></a>
+                        <a href="register.html"><img src="img/DraftIRBL.png" alt="imageDraft" class="img-fluid" width="700px"></a>
+                    </div>
 
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <p> Parte dos</p><hr>
-                    <img src="img/Publi.png" alt="Publicidad">
+                
+
+                <div class="col-12 col-sm-6 col-lg-4" id="publi">
+                    <img src="img/Publi.png" alt="Publicidad" class="img-fluid">
+                </div>
+                <br>
+
+                
+
+                <div class="col-12" id="publiMovil">
+                    <img src="#" alt="Publicidad Movil">
                 </div>
             </div>
         </div>
@@ -135,14 +196,10 @@
                 </div>
                 <div class="row justify-content-center">             
                     <div col-auto>
-                        <p>© Copyright 2018 International Roblox Basketball League</p>
+                        <p>©Copyright 2018 International Roblox Basketball League</p>
                     </div>
                 </div>
             </div>
         </footer>
     </body>                
-        
-
-
-        
 </html>
