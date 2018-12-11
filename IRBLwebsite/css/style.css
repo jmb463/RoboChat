@@ -126,3 +126,6 @@ p{
     font-family: Verdana
 }
 
+.dropdown-menu{
+    background-color: rgb(204, 185, 200);
+}
