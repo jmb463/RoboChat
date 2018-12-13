@@ -1,47 +1,103 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>International Roblox Basketball League Website</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta http-equiv="x-ua-compatible" content="ie-edge">
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css"> 
-        <script src="js/script.js"></script> 
-        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>  
-        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">    
-        <link rel="icon" type="image/png" href="/img/icono.ico">  <!--Icono-->
-    </head>
+        <head>
+            <title>International Roblox Basketball League Website</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta http-equiv="x-ua-compatible" content="ie-edge">
+            <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+            <link rel="stylesheet" href="./css/style.css">  
+            <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+            <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
+            <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+            <link rel="stylesheet" href="./node_modules/bootstrap-social/bootstrap-social.css">
+            <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+            <script src="./js/script.js"></script> 
+            <link rel="icon" type="image/png" href="./img/icono.ico">  <!--Icono-->
+        </head>
 
 
     <body>
         <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
             <div class="container">
-                <a class="navbar-brand mr-auto" href="index.html"><img src="img/IRBL.png" height="30" width="21"></a>
+                <a class="navbar-brand mr-auto" href="index.html"><img src="img/IRBLicon.png" height="30" width="30"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
                 <div class="collapse navbar-collapse" id="Navbar">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html"> Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="teams.html"><span class="fa fa-list fa-xs"></span> Teams</a></li>
-                        <li class="nav-item active"><a class="nav-link" href="news.html"><span class="fa fa-list fa-xs"></span> News</a></li>
-                        <li class="nav-item"><a class="nav-link" href="rankings.html"><span class="fa fa-list fa-xs"> Rankings</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="register.html"><span class="fa fa-list fa-xs"> Register</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="aboutus.html"><span class="fa fa-info fa-xs"></span> About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contactus.html"><span class="fa fa-address-card fa-xs"> Contact</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html"> HOME</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"> TEAMS</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="sas.html"><img src="img/Spurs.png" height="30" width="30"> San Antonio Spurs</a>
+                                <a class="dropdown-item" href="sjb.html"><img src="img/SJBicon.png" height="30" width="30"> San José Bears</a>
+                                <a class="dropdown-item" href="psh.html"><img src="img/PalmaSkyhawks.png" height="30" width="30"> Palma Skyhawks</a>
+                                <a class="dropdown-item" href="skk.html"><img src="img/SKKnights.png" height="30" width="30"> Seoul SK Knights</a>
+                                <a class="dropdown-item" href="shs.html"><img src="img/ShanghaiSharks.png" height="30" width="30"> Shanghai Sharks</a>
+                                <a class="dropdown-item" href="gzs.html"><img src="img/GifuSwoops.png" height="30" width="30"> Gifu Swoops</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active"><a class="nav-link" href="news.html"><span class="fa fa-list fa-xs"></span> NEWS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rankings.html"><span class="fa fa-list fa-xs"></span> RANKINGS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="register.html"><span class="fa fa-list fa-xs"></span> REGISTER</a></li>
+                        <li class="nav-item"><a class="nav-link" href="aboutus.html"><span class="fa fa-info fa-xs"></span> ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contactus.html"><span class="fa fa-address-card fa-xs"></span> CONTACT</a></li>
                     </ul>
                 </div>            
             </div>
         </nav>
 
-        <div class="container">
+        <div class="container" id="principalContainer">
+            <div class="row row-header">
+                <div class="col-12 col-sm-12 col-lg-12">
+                    <ol class="col-12 breadcrumb">
+                        <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                        <li class="breadcrumb-item active">News</li>        
+                    </ol>
+
+                    <h3 id="tituloPrin">Lastest news</h3><br>
+                </div>
+            </div>
+
+            <div class="row row-content" id="noticias">
+                <div class="col-sm-4 col-md-4" id="noticia1">
+                    <div class="thumbnail">
+                        <img src="img/DraftArticle.png" id="imagen1" class="img-fluid img-circle" alt="imagen" width="100%" height="10">
+                        <h3 id="titulo1"><a href="article1.html">Commisioner sets the date for the IRBL draft</a></h3>
+                        <p class="text-muted" id="fPublicacion1">Por Pepe Pino 04 Abr, 2018 / 15:10</p>
+                        <p id="texto1">The cottage industry that is Immediate and Final Draft Analysis was in fine fettle this weekend.
+
+                                For me, assigning winners and losers tags 12 hours after a Draft is just as ridiculous as the mock drafts that precede it. I defy you to take any collection of 18-to 20-year-olds doing anything, and predict with any level of correctness which one or two of them will become great...</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-md-4" id="noticia2">
+                    <div class="thumbnail">
+                        <img src="img/newCoach.png" id="imagen2" class="img-circle img-fluid" alt="imagen" width="100%" height="50">
+                        <h3 id="titulo2"><a href="article2.html">Ex-NBA allstar comes to IRBL to coach the San Antonio Spurs</a></h3>
+                        <p id="fPublicacion2" class="text-muted">Por Romeo Salix 20 Ene, 2018 / 10:40</p>
+                        <p id="texto2">Zazag37 was in the news for all the wrong reasons the past couple weeks, as the former NRBA player took shots at seemingly everyone he ever worked with in his upcoming book. And after the juiciest tidbits leaked, Zaza looked upon the scorched earth at his feet and decided...</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-md-4" id="noticia3">
+                    <div class="thumbnail">
+                        <img src="img/SJBarena.png" id="imagen3" class="img-fluid img-circle" alt="imagen" width="100%" height="50">
+                        <h3 id="titulo3"><a href="article3.html">San Jose Bears are the first ones to have a stadium</a></h3>
+                        <p id="fPublicacion3" class="text-muted">Por Maria Olea 18 Set, 2017 / 13:10</p>
+                        <p id="texto3">As one of the first International Roblox Basketball League (IRBL) stadiums, the HP Pavilion Arena will get a $140 million refurbishment from ShoP Architects and Rossetti.</p>
+                    </div>
+                </div>
+            </div>
+            
+            
             <div class="row">
-                <img src="img/IRBL.png">
+                <div class="col-12 col-sm-12 col-md-12">
+                    <button class="btn btn-danger btn-block" id="moreArticles">More articles</button><br>
+                </div>
             </div>
         </div>
 
@@ -50,11 +106,11 @@
                 <div class="row row-footer">             
                     <div class="col-4 col-sm-2">
                         <h5>Links</h5>
-                            <ul class="list-unstyled">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Menu</a></li>
-                            <li><a href="#">Contact</a></li>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="register.html">Register</a></li>
+                            <li><a href="teams.html">Teams</a></li>
+                            <li><a href="news.html">News</a></li>
                         </ul>
                     </div>
                     <div class="col-7 col-sm-5">
@@ -79,7 +135,7 @@
                 </div>
                 <div class="row justify-content-center">             
                     <div col-auto>
-                        <p>© Copyright 2018 Siam Palace Thai Cuisine</p>
+                        <p>© Copyright 2018 International Roblox Basketball League</p>
                     </div>
                 </div>
             </div>

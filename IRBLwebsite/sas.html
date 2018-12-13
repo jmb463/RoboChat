@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>International Roblox Basketball League Website</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie-edge">
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/style.css">  
+        <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./node_modules/bootstrap-social/bootstrap-social.css">
+        <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+        <script src="./js/script.js"></script> 
+        <link rel="icon" type="image/png" href="./img/icono.ico">  <!--Icono-->
+    </head>
+
+
+    <body>
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+            <div class="container">
+                <a class="navbar-brand mr-auto" href="index.html"><img src="img/IRBLicon.png" height="30" width="30" id="Logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active"><a class="nav-link" href="index.html"> HOME</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"> TEAMS</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="sas.html"><img src="img/Spurs.png" height="30" width="30"> San Antonio Spurs</a>
+                                <a class="dropdown-item" href="sjb.html"><img src="img/SJBicon.png" height="30" width="30"> San José Bears</a>
+                                <a class="dropdown-item" href="psh.html"><img src="img/PalmaSkyhawks.png" height="30" width="30"> Palma Skyhawks</a>
+                                <a class="dropdown-item" href="skk.html"><img src="img/SKKnights.png" height="30" width="30"> Seoul SK Knights</a>
+                                <a class="dropdown-item" href="shs.html"><img src="img/ShanghaiSharks.png" height="30" width="30"> Shanghai Sharks</a>
+                                <a class="dropdown-item" href="gzs.html"><img src="img/GifuSwoops.png" height="30" width="30"> Gifu Swoops</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="news.html"><span class="fa fa-list fa-xs"></span> NEWS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rankings.html"><span class="fa fa-list fa-xs"></span> RANKINGS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="register.html"><span class="fa fa-list fa-xs"></span> REGISTER</a></li>
+                        <li class="nav-item"><a class="nav-link" href="aboutus.html"><span class="fa fa-info fa-xs"></span> ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contactus.html"><span class="fa fa-address-card fa-xs"></span> CONTACT</a></li>
+                    </ul>
+                </div>            
+            </div>
+        </nav>
+
+        <div class="container" id="principalContainer">
+            <div class="row row-header">
+                <div class="col-12 col-sm-12 col-lg-12">
+                    <ol class="col-12 breadcrumb">
+                        <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="./teams.html">Teams</a></li> 
+                        <li class="breadcrumb-item active">San Antonio Spurs</li>       
+                    </ol>
+                </div>
+            </div>
+            
+            <div class="row row-content">
+                <div class="col-12 col-sm-6 col-lg-6">
+                    <img src="img/Spurs.png" class="img-fluid">
+                </div>
+                <div class="col-12 col-sm-6 col-lg-6">
+                    <h2>San Antonio Spurs</h2><hr>
+                    <p>Streak: 2</p>
+                    <p>Coach: Someone</p>
+                    <p>Record: 5 W - 1 L</p>
+                    <p>Nationality: USA</p>
+                    <p>Founder: Irving Allen Mathews</p>
+                </div>
+            </div>
+
+            <div class="row row-content">
+                <div class="col-12 col-sm-12 col-lg-12">
+                    <h2>Principal Lineup</h2><hr>
+                    <div class="table-responsive">
+                        <table class="table table-striped" id="teamTable">
+                            <tr>
+                                <th><img src="img/ZazagPhoto.png" class="img-fluid"></th>
+                                <th><img src="img/ZazagPhoto.png" class="img-fluid"></th>
+                                <th><img src="img/ZazagPhoto.png" class="img-fluid"></th>
+                                <th><img src="img/ZazagPhoto.png" class="img-fluid"></th>
+                                <th><img src="img/ZazagPhoto.png" class="img-fluid"></th>        
+                            </tr>
+    
+                            <tr>
+                                <td>PG</td>
+                                <td>SG</td>
+                                <td>SF</td> 
+                                <td>PF</td>
+                                <td>C</td>
+                                    
+                            </tr>
+    
+                            <tr>
+                                <td>Zazag37</td>
+                                <td>Zazag37</td>
+                                <td>Zazag37</td> 
+                                <td>Zazag37</td>
+                                <td>Zazag37</td>  
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-content">
+                <div class="col-12 col-sm-6 col-lg-6">
+                    <h2>Team Leaders</h2><hr>
+                    <div class="table-responsive">
+                        <table class="table table-striped" id="teamTable">
+                            <tr>
+                                <th><img src="img/ZazagPhoto.png" class="img-fluid"></th>
+                                <th><img src="img/ZazagPhoto.png" class="img-fluid"></th>
+                                <th><img src="img/ZazagPhoto.png" class="img-fluid"></th>      
+                            </tr>
+        
+                            <tr>
+                                <td>PPG</td>
+                                <td>APG</td>
+                                <td>SPG</td>                  
+                            </tr>
+        
+                            <tr>
+                                <td>30</td>
+                                <td>14</td>
+                                <td>9.2</td> 
+                            </tr>
+    
+                        </table>
+                    </div>                    
+                </div>
+                <div class="col-12 col-sm-6 col-lg-6">
+                    <div class="col-12 col-sm-6 col-lg-6">
+                        <h2>Trophies</h2><hr>
+                        <div class="table-responsive">
+                            <table class="table table-striped" id="teamTable">
+                                <tr>
+                                    <th>Year</th>
+                                    <th>Trophy</th>
+                                       
+                                </tr>
+                    
+                                <tr>
+                                    <td>2017</td>
+                                    <td>IRBL PreSeason</td>
+                                                  
+                                </tr>
+                            </table>
+                        </div>                    
+                    </div>                    
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row row-footer">             
+                    <div class="col-4 col-sm-2">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="register.html">Register</a></li>
+                            <li><a href="teams.html">Teams</a></li>
+                            <li><a href="news.html">News</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-7 col-sm-5">
+                        <h5>Our Address</h5>
+                        <address>
+                            <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
+                            <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+                            <i class="fa fa-envelope fa-lg"></i>: 
+                            <a href="#">IRBLwebsite@gmail.com</a>
+                        </address>
+                    </div>
+
+                    <div class="col-12 col-sm-4 align-self-center">
+                        <div class="text-center">
+                            <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                            <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                            <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                            <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                            <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">             
+                    <div col-auto>
+                        <p>©Copyright 2018 International Roblox Basketball League</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>                
+</html>

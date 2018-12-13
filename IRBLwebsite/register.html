@@ -5,15 +5,16 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie-edge">
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css"> 
-        <script src="js/script.js"></script> 
-        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>  
-        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">    
-        <link rel="icon" type="image/png" href="/img/icono.ico">  <!--Icono-->
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/style.css">  
+        <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./node_modules/bootstrap-social/bootstrap-social.css">
+        <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+        <script src="./js/script.js"></script> 
+        <link rel="icon" type="image/png" href="./img/icono.ico">  <!--Icono-->
     </head>
 
 
@@ -27,24 +28,58 @@
                 
                 <div class="collapse navbar-collapse" id="Navbar">
                     <ul class="navbar-nav mr-auto">
-                            <li class="nav-item"><a class="nav-link" href="index.html"> Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="teams.html"><span class="fa fa-list fa-xs"></span> Teams</a></li>
-                        <li class="nav-item"><a class="nav-link" href="news.html"><span class="fa fa-list fa-xs"></span> News</a></li>
-                        <li class="nav-item"><a class="nav-link" href="rankings.html"><span class="fa fa-list fa-xs"> Rankings</span></a></li>
-                        <li class="nav-item active"><a class="nav-link" href="register.html"><span class="fa fa-list fa-xs"> Register</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="aboutus.html"><span class="fa fa-info fa-xs"></span> About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contactus.html"><span class="fa fa-address-card fa-xs"> Contact</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html"> HOME</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"> TEAMS</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="sas.html"><img src="img/Spurs.png" height="30" width="30"> San Antonio Spurs</a>
+                                <a class="dropdown-item" href="sjb.html"><img src="img/SJBicon.png" height="30" width="30"> San José Bears</a>
+                                <a class="dropdown-item" href="psh.html"><img src="img/PalmaSkyhawks.png" height="30" width="30"> Palma Skyhawks</a>
+                                <a class="dropdown-item" href="skk.html"><img src="img/SKKnights.png" height="30" width="30"> Seoul SK Knights</a>
+                                <a class="dropdown-item" href="shs.html"><img src="img/ShanghaiSharks.png" height="30" width="30"> Shanghai Sharks</a>
+                                <a class="dropdown-item" href="gzs.html"><img src="img/GifuSwoops.png" height="30" width="30"> Gifu Swoops</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="news.html"><span class="fa fa-list fa-xs"></span> NEWS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rankings.html"><span class="fa fa-list fa-xs"></span> RANKINGS</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="register.html"><span class="fa fa-list fa-xs"></span> REGISTER</a></li>
+                        <li class="nav-item"><a class="nav-link" href="aboutus.html"><span class="fa fa-info fa-xs"></span> ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contactus.html"><span class="fa fa-address-card fa-xs"></span> CONTACT</a></li>
                     </ul>
                 </div>            
             </div>
         </nav>
 
+        <header class="jumbotron">
+            <div class="container">
+                <div class="row row-header">
+                    <div class="col-12 col-sm-6">
+                        <h2>International Roblox Basketball League </h1>
+                        <p>Prospects from all around the world try to be the new IRBL superstars, will you be one of them?</p>
+                    </div>
+                    <div class="col-12 col-sm">
+                        <div class="col-12 col-sm align-self-center">
+                            <img src="img/DraftIRBL.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
         <div class="container" id="principalContainer">
+            <div class="row row-header">
+                <div class="col-12 col-sm-12 col-lg-12">
+                    <ol class="col-12 breadcrumb">
+                        <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                        <li class="breadcrumb-item active">Register</li>        
+                    </ol>
+                </div>
+            </div>
+
             <div class="row row-content">
                 <div class="col-12 col-sm-12 col-lg-12">
-                    <form>
+                    <form name="myForm">
                         <div class="form-group row" id="headerForm">
-                            <img src="img/IRBLicon.png" height="30" width="30" class="img-responsive">
                             <h2> IRBL Pre-draft formulary</h2>
                         </div>
 
@@ -107,24 +142,6 @@
                                 <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
                             </div>
                         </div>
-            
-                        <div class="form-group row">
-                            <div class="col-md-6 offset-md-2">
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
-                                    <label class="form-check-label" for="approve">
-                                        <strong>May we contact you?</strong>
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 offset-md-1">
-                                <select class="form-control">
-                                    <option>Tel.</option>
-                                    <option>Email</option>
-                                </select>
-                            </div>
-                        </div>
 
                         <div class="form-group row">
                             <label for="position" class="col-md-2 col-form-label">Position</label>
@@ -140,15 +157,17 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="feedback" class="col-md-2 col-form-label">Your aptitudes</label>
+                            <label for="aptitudes" class="col-md-2 col-form-label">Your aptitudes</label>
                             <div class="col-md-10">
-                                <textarea class="form-control" id="feedback" name="feedback" rows="12"></textarea>
+                                <textarea class="form-control" id="aptitudes" name="aptitudes" rows="12"></textarea>
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <div class="offset-md-2 col-md-10">
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <section>
+                                    <input id="registerBtn" type="button" value="Submit"><br><br>
+                                </section>
                             </div>
                         </div>
                     </form>
@@ -161,11 +180,11 @@
                 <div class="row row-footer">             
                     <div class="col-4 col-sm-2">
                         <h5>Links</h5>
-                            <ul class="list-unstyled">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Menu</a></li>
-                            <li><a href="#">Contact</a></li>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="register.html">Register</a></li>
+                            <li><a href="teams.html">Teams</a></li>
+                            <li><a href="news.html">News</a></li>
                         </ul>
                     </div>
                     <div class="col-7 col-sm-5">

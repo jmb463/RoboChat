@@ -5,15 +5,16 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie-edge">
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css"> 
-        <script src="js/script.js"></script> 
-        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>  
-        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">    
-        <link rel="icon" type="image/png" href="/img/icono.ico">  <!--Icono-->
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/style.css">  
+        <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./node_modules/bootstrap-social/bootstrap-social.css">
+        <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+        <script src="./js/script.js"></script> 
+        <link rel="icon" type="image/png" href="./img/icono.ico">  <!--Icono-->
     </head>
 
 
@@ -27,13 +28,23 @@
                 
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active"><a class="nav-link" href="index.html"> Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="teams.html"><span class="fa fa-list fa-xs"></span> Teams</a></li>
-                        <li class="nav-item"><a class="nav-link" href="news.html"><span class="fa fa-list fa-xs"></span> News</a></li>
-                        <li class="nav-item"><a class="nav-link" href="rankings.html"><span class="fa fa-list fa-xs"> Rankings</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="register.html"><span class="fa fa-list fa-xs"> Register</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="aboutus.html"><span class="fa fa-info fa-xs"></span> About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contactus.html"><span class="fa fa-address-card fa-xs"> Contact</span></a></li>
+                        <li class="nav-item active"><a class="nav-link" href="index.html"> HOME</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"> TEAMS</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="sas.html"><img src="img/Spurs.png" height="30" width="30"> San Antonio Spurs</a>
+                                <a class="dropdown-item" href="sjb.html"><img src="img/SJBicon.png" height="30" width="30"> San José Bears</a>
+                                <a class="dropdown-item" href="psh.html"><img src="img/PalmaSkyhawks.png" height="30" width="30"> Palma Skyhawks</a>
+                                <a class="dropdown-item" href="skk.html"><img src="img/SKKnights.png" height="30" width="30"> Seoul SK Knights</a>
+                                <a class="dropdown-item" href="shs.html"><img src="img/ShanghaiSharks.png" height="30" width="30"> Shanghai Sharks</a>
+                                <a class="dropdown-item" href="gzs.html"><img src="img/GifuSwoops.png" height="30" width="30"> Gifu Swoops</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="news.html"><span class="fa fa-list fa-xs"></span> NEWS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rankings.html"><span class="fa fa-list fa-xs"></span> RANKINGS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="register.html"><span class="fa fa-list fa-xs"></span> REGISTER</a></li>
+                        <li class="nav-item"><a class="nav-link" href="aboutus.html"><span class="fa fa-info fa-xs"></span> ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contactus.html"><span class="fa fa-address-card fa-xs"></span> CONTACT</a></li>
                     </ul>
                 </div>            
             </div>
@@ -52,15 +63,15 @@
                 <!-- The slideshow -->
                 <div class="carousel-inner" id="ContenedorIMG">
                     <div class="carousel-item active">
-                        <a href="news.html"><img class="image" src="img/draftArticle.png" alt="Draft Article" width="1100" height="600"><div class="overlay">Commisioner sets the date for the IRBL draft</div></a>
+                        <a href="article1.html"><img class="image" src="img/draftArticle.png" alt="Draft Article" width="1100" height="600"><div class="overlay">Commisioner sets the date for the IRBL draft</div></a>
                     </div>
 
                     <div class="carousel-item">
-                        <a href="news.html"><img src="img/newCoach.png" alt="New Coach" width="1100" height="600"><div class="overlay">Ex-NBA allstar comes to IRBL to coach the San Antonio Spurs</div></a>
+                        <a href="article2.html"><img src="img/newCoach.png" alt="New Coach" width="1100" height="600"><div class="overlay">Ex-NBA allstar comes to IRBL to coach the San Antonio Spurs</div></a>
                     </div>
                     
                     <div class="carousel-item">
-                        <a href="news.html"><img src="img/SJBarena.png" alt="New Arena" width="1100" height="600"><div class="overlay">San Jose Bears are the first ones to have a stadium</div></a>
+                        <a href="article3.html"><img src="img/SJBarena.png" alt="New Arena" width="1100" height="600"><div class="overlay">San Jose Bears are the first ones to have a stadium</div></a>
                     </div>
                 </div>
             
@@ -90,17 +101,17 @@
                               <th>Loses</th>
                             </tr>
                             <tr>
-                              <td>San Antonio Spurs</td>
+                              <td><a href="sas.html">San Antonio Spurs</a></td>
                               <td>0</td> 
                               <td>0</td>
                             </tr>
                             <tr>
-                              <td>San José Bears</td>
+                              <td><a href="sjb.html">San Jose Bears</a></td>
                               <td>0</td> 
                               <td>0</td>
                             </tr>
                             <tr>
-                                <td>Mallorca voltors</td>
+                                <td><a href="psh.html">Palma Skyhawks</a></td>
                                 <td>0</td>
                                 <td>0</td>
                             </tr>
@@ -110,17 +121,17 @@
                                 <th>Loses</th>
                             </tr>
                             <tr>
-                                <td>Seoul SK Knights</td>
+                                <td><a href="skk.html">Seoul SK Knights</a></td>
                                 <td>0</td>
                                 <td>0</td>
                             </tr>
                             <tr>
-                                <td>Shanghai Sharks</td>
+                                <td><a href="shs.html">Shanghai Sharks</a></td>
                                 <td>0</td>
                                 <td>0</td>
                             </tr>
                             <tr>
-                                <td>Gifu Swoops</td>
+                                <td><a href="gzs.html">Gifu Swoops</a></td>
                                 <td>0</td>
                                 <td>0</td>
                             </tr>
@@ -130,20 +141,20 @@
                         <hr>
                     </div>
 
-                    <div class="col-12">
-                        <a href="register.html>"><h3>Remember to declare for the IRBL draft here:</h3></a>
-                        <a href="register.html"><img src="" alt="image draft"  class="image-landscape"></a>
+                    <div class="col-12 col-sm-12 col-lg-12">
+                        <a href="register.html"><h3>Remember to declare for the IRBL draft here:</h3></a>
+                        <a href="register.html"><img src="img/DraftIRBL.png" alt="imageDraft" class="img-fluid" width="700px"></a>
                     </div>
 
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-4" id="publi">
-                    <img src="img/Publi.png" alt="Publicidad">
-                </div>
+                
 
-                <div class="col-12" id="publiMovil">
-                    <img src="#" alt="Publicidad Movil">
+                <div class="col-12 col-sm-6 col-lg-4" id="publi">
+                    <img src="img/Publi.png" alt="Publicidad" class="img-fluid">
                 </div>
+                <br>
+
             </div>
         </div>
 
@@ -152,10 +163,10 @@
                 <div class="row row-footer">             
                     <div class="col-4 col-sm-2">
                         <h5>Links</h5>
-                            <ul class="list-unstyled">
-                            <li><a href="home.html">Home</a></li>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="register.html">Register</a></li>
-                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="teams.html">Teams</a></li>
                             <li><a href="news.html">News</a></li>
                         </ul>
                     </div>
@@ -187,8 +198,4 @@
             </div>
         </footer>
     </body>                
-        
-
-
-        
 </html>
