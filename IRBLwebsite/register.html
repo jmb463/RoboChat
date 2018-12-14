@@ -5,15 +5,16 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie-edge">
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css"> 
-        <script src="js/script.js"></script> 
-        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>  
-        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">    
-        <link rel="icon" type="image/png" href="/img/icono.ico">  <!--Icono-->
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/style.css">  
+        <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./node_modules/bootstrap-social/bootstrap-social.css">
+        <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+        <script src="./js/script.js"></script> 
+        <link rel="icon" type="image/png" href="./img/icono.ico">  <!--Icono-->
     </head>
 
 
@@ -31,12 +32,12 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"> TEAMS</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#team1"><img src="img/Spurs.png" height="30" width="30"> San Antonio Spurs</a>
-                                <a class="dropdown-item" href="#team2"><img src="img/SJBicon.png" height="30" width="30"> San José Bears</a>
-                                <a class="dropdown-item" href="#team2"><img src="img/PalmaSkyhawks.png" height="30" width="30"> Palma Skyhawks</a>
-                                <a class="dropdown-item" href="#team2"><img src="img/SKKnights.png" height="30" width="30"> Seoul SK Knights</a>
-                                <a class="dropdown-item" href="#team2"><img src="img/ShanghaiSharks.png" height="30" width="30"> Shanghai Sharks</a>
-                                <a class="dropdown-item" href="#team2"><img src="img/GifuSwoops.png" height="30" width="30"> Gifu Swoops</a>
+                                <a class="dropdown-item" href="sas.html"><img src="img/Spurs.png" height="30" width="30"> San Antonio Spurs</a>
+                                <a class="dropdown-item" href="sjb.html"><img src="img/SJBicon.png" height="30" width="30"> San José Bears</a>
+                                <a class="dropdown-item" href="psh.html"><img src="img/PalmaSkyhawks.png" height="30" width="30"> Palma Skyhawks</a>
+                                <a class="dropdown-item" href="skk.html"><img src="img/SKKnights.png" height="30" width="30"> Seoul SK Knights</a>
+                                <a class="dropdown-item" href="shs.html"><img src="img/ShanghaiSharks.png" height="30" width="30"> Shanghai Sharks</a>
+                                <a class="dropdown-item" href="gzs.html"><img src="img/GifuSwoops.png" height="30" width="30"> Gifu Swoops</a>
                             </div>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="news.html"><span class="fa fa-list fa-xs"></span> NEWS</a></li>
@@ -77,7 +78,7 @@
 
             <div class="row row-content">
                 <div class="col-12 col-sm-12 col-lg-12">
-                    <form>
+                    <form name="myForm">
                         <div class="form-group row" id="headerForm">
                             <h2> IRBL Pre-draft formulary</h2>
                         </div>
@@ -156,15 +157,17 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="feedback" class="col-md-2 col-form-label">Your aptitudes</label>
+                            <label for="aptitudes" class="col-md-2 col-form-label">Your aptitudes</label>
                             <div class="col-md-10">
-                                <textarea class="form-control" id="feedback" name="feedback" rows="12"></textarea>
+                                <textarea class="form-control" id="aptitudes" name="aptitudes" rows="12"></textarea>
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <div class="offset-md-2 col-md-10">
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <section>
+                                    <input id="registerBtn" type="button" value="Submit"><br><br>
+                                </section>
                             </div>
                         </div>
                     </form>
@@ -177,11 +180,11 @@
                 <div class="row row-footer">             
                     <div class="col-4 col-sm-2">
                         <h5>Links</h5>
-                            <ul class="list-unstyled">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Menu</a></li>
-                            <li><a href="#">Contact</a></li>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="register.html">Register</a></li>
+                            <li><a href="teams.html">Teams</a></li>
+                            <li><a href="news.html">News</a></li>
                         </ul>
                     </div>
                     <div class="col-7 col-sm-5">
