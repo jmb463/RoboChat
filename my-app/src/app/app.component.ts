@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'My first Angular App!';
+
+  onClickMe(value){
+    alert(value);
+  }
+
+  clickMessage="";
+  clicks=1;
+
+  onClickMe2(event:any){
+    let evtMsg= event ? 'Event target is ' + event.target.tagname : '';
+    this.clickMessage = (`Click #${this.clicks++}. ${evtMsg}`);
+  }
 }

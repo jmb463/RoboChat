@@ -1,0 +1,30 @@
+<div class="container"
+    fxLayout="row"
+    fxLayout.sm="column"
+    fxLayout.xs="column"
+    fxLayoutAlign.gt-md="space-around center"
+    fxLayoutGap="10px" 
+    fxLayoutGap.xs="0">
+
+  <div fxFlex="40">
+    <p>Display the details of the Dish here</p>
+    
+  </div>
+
+  <div fxFlex="40" ngIf="dish">
+    <mat-list>
+      <mat-list-item>
+        <h2>Comments</h2>
+      </mat-list-item>
+      <mat-list-item ngFor="let comment of dish.comments">
+        <p mat-line>
+          <span>{{comment.comment}}</span>
+        </p>
+        <p mat-line>
+          <span>{{comment.rating}}</span>
+        </p>
+      </mat-list-item>
+    </mat-list>
+  </div>
+
+</div>
