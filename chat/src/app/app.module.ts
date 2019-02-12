@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule, FormsModule} from "@angular/forms";
 
+//Modules
+import { AlertModule } from 'ngx-bootstrap';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './pages/login/login.component';
@@ -14,6 +17,9 @@ import { NavbarComponent } from './pages/navbar/navbar.component';
 import { ChatComponent } from './pages/chat/chat.component';
 import { ChatMessageComponent } from './pages/chat/components/chat-message/chat-message.component';
 import { ChatInputComponent } from './pages/chat/components/chat-input/chat-input.component';
+import { from } from 'rxjs';
+
+import { AlertService } from './services/alert.service';
 
 @NgModule({
   declarations: [
@@ -31,11 +37,12 @@ import { ChatInputComponent } from './pages/chat/components/chat-input/chat-inpu
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AlertModule.forRoot(),
     ReactiveFormsModule,
     FormsModule,
     BsDropdownModule.forRoot()
   ],
-  providers: [],
+  providers: [AlertService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
