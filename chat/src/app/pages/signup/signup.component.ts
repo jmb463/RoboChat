@@ -14,7 +14,12 @@ export class SignupComponent implements OnInit {
 
   public signupForm: FormGroup;
 
-  constructor(private fb: FormBuilder, private alertService: AlertService, private loadingService: LoadingService) { 
+  constructor(
+    private fb: FormBuilder, 
+    private alertService: AlertService, 
+    private loadingService: LoadingService
+    
+    ) { 
     this.createForm();
   }
 

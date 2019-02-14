@@ -8,7 +8,7 @@ a{
     color: $light-grey;
     margin-left: 3em;
 
-    a.active{
+    &.active{
         border-bottom: 3px solid $gold;
     }
 }
