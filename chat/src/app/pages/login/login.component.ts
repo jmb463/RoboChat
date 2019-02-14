@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators} from '@angular/forms';
 import { Alert } from 'src/app/classes/alert';
 import { AlertService } from '../../services/alert.service'
 import { AlertType } from 'src/app/enums/alert-type.enum';
+import { LoadingService } from 'src/app/services/loading.service';
 
 @Component({
   selector: 'app-login',
@@ -13,7 +14,7 @@ export class LoginComponent implements OnInit {
 
   public loginForm: FormGroup;
 
-  constructor(private fb: FormBuilder, private alertService: AlertService) { 
+  constructor(private fb: FormBuilder, private alertService: AlertService, private loadingService: LoadingService) { 
     this.createForm();
   }
 
@@ -28,14 +29,22 @@ export class LoginComponent implements OnInit {
   }
  
   public submit(): void {
+    this.loadingService.isLoading.next(true);
+
     if (this.loginForm.valid) {
     // TODO call the auth service
     const {email, password} = this.loginForm.value;
     console.log(`Email: ${email}, Password: ${password}`);
+    this.loadingService.isLoading.next(false);
     }
     else {
       const failedLoginAlert = new Alert('Your email or password were inavalid, try again.', AlertType.Danger);
-      this.alertService.alerts.next(failedLoginAlert);
+      setTimeout(() => {
+        this.loadingService.isLoading.next(false);
+        this.alertService.alerts.next(failedLoginAlert);
+      },2000);
+        
+      
     }
   } 
  
